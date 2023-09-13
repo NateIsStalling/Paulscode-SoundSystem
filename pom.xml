@@ -3,25 +3,36 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.paulscode</groupId>
+    <groupId>com.github.NateIsStalling</groupId>
     <artifactId>Paulscode-SoundSystem</artifactId>
-    <version>2013.04.17</version>
+    <version>2013.04.17-unofficial</version>
     <inceptionYear>2014</inceptionYear>
     <packaging>jar</packaging>
 
     <developers>
+        <developer>
+            <name>Paul Lamb</name>
+            <url>http://www.paulscode.com</url>
+        </developer>
         <developer>
             <id>kovertopz</id>
             <name>Jason Sorensen</name>
             <email>sorensenj@smert.net</email>
             <url>http://smert.net</url>
         </developer>
+        <developer>
+            <name>NateIsStalling</name>
+            <url>https://github.com/NateIsStalling</url>
+            <roles>
+                <role>Unofficial Mirror</role>
+            </roles>
+        </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/kovertopz/Paulscode-SoundSystem.git</connection>
-        <developerConnection>scm:git:git@github.com:kovertopz/Paulscode-SoundSystem.git</developerConnection>
-        <url>https://github.com/kovertopz/Paulscode-SoundSystem</url>
+        <connection>scm:git:git://github.com/NateIsStalling/Paulscode-SoundSystem.git</connection>
+        <developerConnection>scm:git:git@github.com:NateIsStalling/Paulscode-SoundSystem.git</developerConnection>
+        <url>https://github.com/NateIsStalling/Paulscode-SoundSystem</url>
     </scm>
 
     <properties>
