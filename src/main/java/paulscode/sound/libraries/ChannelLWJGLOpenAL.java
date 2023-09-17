@@ -138,7 +138,7 @@ public class ChannelLWJGLOpenAL extends Channel
             try
             {
                 // Stop playing the source:
-                AL10.alSourceStop( ALSource );
+                AL10.alSourceStop( ALSource.get(0) );
                 AL10.alGetError();
             }
             catch( Exception e )
