@@ -11,7 +11,6 @@ import javax.sound.sampled.AudioFormat;
 
 // From the lwjgl library, http://www.lwjgl.org
 import org.lwjgl.BufferUtils;
-import org.lwjgl.LWJGLException;
 import org.lwjgl.openal.AL;
 import org.lwjgl.openal.AL10;
 
@@ -161,10 +160,10 @@ public class LibraryLWJGLOpenAL extends Library
         try
         {
             // Try and create the sound system:
-            AL.create();
+            OpenALUtil.create();
             errors = checkALError();
         }
-        catch( LWJGLException e )
+        catch( java.lang.Exception e )
         {
             // There was an exception
             errorMessage( "Unable to initialize OpenAL.  Probable cause: " +
@@ -257,12 +256,12 @@ public class LibraryLWJGLOpenAL extends Library
  */
     public static boolean libraryCompatible()
     {
-        if( AL.isCreated() )
+        if( OpenALUtil.isCreated() )
             return true;
         
         try
         {
-            AL.create();
+            OpenALUtil.create();
         }
         catch( java.lang.Exception e )
         {
@@ -271,7 +270,7 @@ public class LibraryLWJGLOpenAL extends Library
         
         try
         {
-            AL.destroy();
+            OpenALUtil.destroy();
         }
         catch( java.lang.Exception e )
         {}
@@ -337,7 +336,7 @@ public class LibraryLWJGLOpenAL extends Library
         }
         
         bufferMap.clear();
-        AL.destroy();
+        OpenALUtil.destroy();
         
         bufferMap = null;
         listenerPositionAL = null;
