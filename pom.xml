@@ -37,7 +37,7 @@
 
     <properties>
         <junit.version>4.11</junit.version>
-        <lwjgl.version>2.9.2</lwjgl.version>
+        <lwjgl.version>3.3.1</lwjgl.version>
         <mavencompiler.version>2.5.1</mavencompiler.version>
         <mavenjavadoc.version>2.10.1</mavenjavadoc.version>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -47,13 +47,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.lwjgl.lwjgl</groupId>
+            <groupId>org.lwjgl</groupId>
             <artifactId>lwjgl</artifactId>
             <version>${lwjgl.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.lwjgl.lwjgl</groupId>
-            <artifactId>lwjgl_util</artifactId>
+            <groupId>org.lwjgl</groupId>
+            <artifactId>lwjgl-openal</artifactId>
             <version>${lwjgl.version}</version>
         </dependency>
 
