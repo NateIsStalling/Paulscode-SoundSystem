@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.NateIsStalling</groupId>
-    <artifactId>Paulscode-SoundSystem</artifactId>
-    <version>2013.04.17-unofficial</version>
+    <artifactId>paulscode-soundsystem-lwjgl3</artifactId>
+    <version>2023.09.17</version>
     <inceptionYear>2014</inceptionYear>
     <packaging>jar</packaging>
 

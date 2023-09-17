@@ -1,8 +1,14 @@
 Paulscode-SoundSystem
 =====================
 
-Paulscode's 3D Sound System.
+An unofficial fork of Paulscode's 3D Sound System updated to work with LWJGL 3.
 
+Modifications:
+
+- Updated LibraryLWJGLOpenAL to work with LWJGL 3
+- Updated groupId and artifactId in pom.xml to not conflict with original package
+- Added OpenALUtil to manage AL initialization and cleanup for LibraryLWJGLOpenAL
+- Added Github Action workflow for Maven build
 
 Downloads:
 
